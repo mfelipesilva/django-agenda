@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+# A função que utilizar render é utilizada para
+# renderizar um template
+def index(request):
+    return render(
+        request,
+        'contact/index.html'
+    )
