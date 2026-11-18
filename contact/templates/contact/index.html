@@ -19,8 +19,10 @@
             <tbody>
                 {% for contact in contacts %}
                     <tr class="table-row">
-                        <td class="table-cell">
-                            <a href="#" class="table-link">
+                        <td class="table-cel">
+                            <a 
+                            href="{% url 'contact:contact' contact.id %}" 
+                            class="table-link">
                                 {{contact.id}}
                             </a>
                         </td>
@@ -34,7 +36,7 @@
                             {{contact.phone}}
                         </td>
                         <td class="table-cell">
-                            {{contact.email}}
+                            {{contact.email }}
                         </td>
                     </tr>
                 {% endfor %}
